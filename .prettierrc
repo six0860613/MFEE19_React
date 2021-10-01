@@ -1,0 +1,7 @@
+{
+  "//": "singleQuote 單引號 semi 分號",
+  "singleQuote": true, 
+  "trailingComma": "es5",
+  "semi": true,
+  "endOfLine": "auto"
+}
