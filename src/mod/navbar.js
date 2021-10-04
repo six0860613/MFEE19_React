@@ -41,6 +41,11 @@ function Navbar() {
                 Refs
               </NavLink>
             </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/Lifecycle">
+                Lifecycle
+              </NavLink>
+            </li>
           </ul>
         </div>
       </nav>

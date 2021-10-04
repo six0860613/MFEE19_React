@@ -62,22 +62,22 @@ function App() {
   };
 
   // 計算目前所有的商品總價
-  const total = () => {
-    let sum = 0;
+  // const total = () => {
+  //   let sum = 0;
 
-    for (let i = 0; i < product.length; i++) {
-      sum += orders[i].count * orders[i].price;
-    }
+  //   for (let i = 0; i < product.length; i++) {
+  //     sum += orders[i].count * orders[i].price;
+  //   }
 
-    return sum;
-  };
+  //   return sum;
+  // };
   return (
     <>
       <div className="card">
         <div className="row">
           {/* <Cart product={product} counts={counts} setCounts={setCounts} /> */}
           <Cart orders={orders} setOrders={setOrders} />
-          <Summary productCount={productCount()} total={total()} />
+          {/* <Summary productCount={productCount()} total={total()} /> */}
         </div>
       </div>
     </>
