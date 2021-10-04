@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import RadioButton from '../components/Form/RadioButton';
 import CheckBox from '../components/Form/CheckBox';
+import SendForm from '../components/Form/SendForm';
 
 function Form(props) {
   // 表單內容
@@ -19,9 +20,13 @@ function Form(props) {
   // checkbox - group - 專用元件
   const [likeList2, setLikeList2] = useState([]);
   const fruitOptions = ['芒果', '西瓜', '芭樂'];
+  // 日期
+  const [date, setDate] = useState('');
 
   return (
     <>
+      <SendForm />
+      <hr />
       <div className="container">
         <h2>文字輸入框</h2>
         <input
@@ -155,6 +160,17 @@ function Form(props) {
               />
             );
           })}
+        </section>
+        <hr />
+        <section id="birth">
+          <h2>日期輸入框</h2>
+          <input
+            type="date"
+            value={date}
+            onChange={(e) => {
+              setDate(e.target.value);
+            }}
+          />
         </section>
       </div>
     </>

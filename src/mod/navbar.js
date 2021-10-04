@@ -36,6 +36,11 @@ function Navbar() {
                 Form
               </NavLink>
             </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/Refs">
+                Refs
+              </NavLink>
+            </li>
           </ul>
         </div>
       </nav>

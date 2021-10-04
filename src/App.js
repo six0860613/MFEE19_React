@@ -7,6 +7,7 @@ import Home from './mod/Home';
 import cartCount from './example/cartCount';
 import appExample from './example/appExample';
 import Form from './example/Form';
+import Refs from './example/Refs';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/cartCount" component={cartCount} />
         <Route path="/appExample" component={appExample} />
         <Route path="/Form" component={Form} />
+        <Route path="/Refs" component={Refs} />
       </Router>
     </>
   );
