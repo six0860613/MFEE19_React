@@ -33,18 +33,20 @@ function Cart(props) {
                   //1. 先展開陣列並複製到變數中
                   const newOrders = [...orders];
 
-                  //2. 運算處理：更新陣列中對應商品數量
-                  // 更新陣列中本商品索引值，如果小於1以1來更新
-                  // newOrders[index].count = newCount < 1 ? 1 : newCount;
-                  newOrders[index].count = newCount;
-                  if (newCount < 1) {
-                    newOrders.splice(index, 1);
-                    console.log(newOrders[index]);
-                    console.log(index);
-                  }
-                  console.log(newOrders);
-                  //3. 設定回原本的狀態
+                  //2. 更新陣列中本商品索引值，如果小於1以1來更新
+                  newOrders[index].count = newCount < 1 ? 1 : newCount;
+
+                  //3. 設定回去
                   setOrders(newOrders);
+                }}
+                deleteItem={(newCount) => {
+                  const newItem = [...orders];
+                  newItem[index].count = newCount;
+                  //刪除用的
+                  if (newCount < 1) {
+                    newItem.splice(index, 1);
+                  }
+                  setOrders(newItem);
                 }}
               />
             </>

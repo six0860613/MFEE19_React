@@ -8,16 +8,16 @@ function Summary(props) {
       <div className="col-md-4 summary">
         <div>
           <h5>
-            <b>Summary</b>
+            <b>訂單結算</b>
           </h5>
         </div>
         <hr />
         <div className="row">
-          <div className="col items">{productCount} ITEMS</div>
+          <div className="col items">共 {productCount} 項商品</div>
           <div className="col text-right">&euro; {total}</div>
         </div>
         <form>
-          <p>SHIPPING</p>
+          <p>運費</p>
           <select
             value={selectedOption}
             onChange={(e) => {
@@ -31,7 +31,7 @@ function Summary(props) {
           </select>
         </form>
         <div className="row total-price">
-          <div className="col">TOTAL PRICE</div>
+          <div className="col">總價</div>
           <div className="col text-right">&euro; {total + selectedOption}</div>
         </div>
         <button className="btn">CHECKOUT</button>

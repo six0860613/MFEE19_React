@@ -1,7 +1,8 @@
 import React from 'react';
 
 function ProductItem(props) {
-  const { id, name, category, image, price, counts, setCounts } = props;
+  const { id, name, category, image, price, counts, setCounts, deleteItem } =
+    props;
   return (
     <>
       <div className="row">
@@ -38,7 +39,13 @@ function ProductItem(props) {
           </div>
           <div className="col">
             &euro; {price}{' '}
-            <a href="#/" className="close">
+            <a
+              href="#/"
+              onClick={() => {
+                deleteItem(counts * 0);
+              }}
+              className="close"
+            >
               &#10005;
             </a>
           </div>
