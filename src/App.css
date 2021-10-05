@@ -41,6 +41,9 @@
   background-color: red;
   color: #fff;
 }
+.navbar-light .navbar-nav .nav-link.active {
+  background-color: rgb(100, 200, 138);
+}
 
 .error {
   color: red;

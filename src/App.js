@@ -9,6 +9,7 @@ import appExample from './example/appExample';
 import Form from './example/Form';
 import Refs from './example/Refs';
 import Lifecycle from './example/Lifecycle';
+import HW from './example/HW';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/Form" component={Form} />
         <Route path="/Refs" component={Refs} />
         <Route path="/Lifecycle" component={Lifecycle} />
+        <Route path="/HW" component={HW} />
       </Router>
     </>
   );

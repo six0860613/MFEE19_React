@@ -17,6 +17,11 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarContent">
           <ul className="navbar-nav">
             <li className="nav-item">
+              <NavLink className="nav-link" to="/HW">
+                HW
+              </NavLink>
+            </li>
+            <li className="nav-item">
               <NavLink className="nav-link" to="/Home">
                 Home
               </NavLink>
