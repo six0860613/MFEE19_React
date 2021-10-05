@@ -13,25 +13,25 @@ function LifecycleFC(props) {
   // 模擬componentDidMount
   useEffect(() => {
     // didMount
-    console.log('componentDidMount(模擬)');
+    console.log('DidMount(模擬)');
     // setDidMount(true);
   }, []);
 
   // 模擬componentDidUpdate + componentDidMount
   useEffect(() => {
-    console.log('componentDidUpdate + componentDidMount(模擬)', total);
+    console.log('DidUpdate + DidMount(模擬)', total);
   }, [total]);
 
   // 模擬componentDidUpdate
   //   useEffect(() => {
   //     if (didMount) {
-  //       console.log('componentDidUpdate+componentDidMount(模擬)', total);
+  //       console.log('DidUpdate + DidMount(模擬)', total);
   //     }
   //   }, [total]);
 
   useEffect(() => {
     if (didMountRef.current) {
-      console.log('componentDidUpdate+componentDidMount(模擬)', total);
+      console.log('DidUpdate(模擬)', total);
     } else {
       didMountRef.current = true;
     }
@@ -40,7 +40,7 @@ function LifecycleFC(props) {
   // 模擬componentWillUnmount
   useEffect(() => {
     return () => {
-      console.log('componentWillUnmount(模擬)', total);
+      console.log('WillUnmount(模擬)', total);
     };
   }, [total]);
 
