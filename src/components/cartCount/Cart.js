@@ -45,6 +45,10 @@ function Cart(props) {
                   //刪除用的
                   if (newCount < 1) {
                     newItem.splice(index, 1);
+                    // filter方法
+                    // const newI = newItem.filter((v, i) => i !== index);
+                    // console.log(newI);
+                    // setOrders(newI);
                   }
                   setOrders(newItem);
                 }}
