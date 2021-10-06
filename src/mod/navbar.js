@@ -51,6 +51,16 @@ function Navbar() {
                 Lifecycle
               </NavLink>
             </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/JQ">
+                JQ
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/ProductFilter">
+                ProductFilter
+              </NavLink>
+            </li>
           </ul>
         </div>
       </nav>

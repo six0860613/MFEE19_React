@@ -10,6 +10,8 @@ import Form from './example/Form';
 import Refs from './example/Refs';
 import Lifecycle from './example/Lifecycle';
 import HW from './example/HW';
+import JQ from './example/JQ';
+import ProductFilter from './example/ProductFilter';
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
         <Route path="/Refs" component={Refs} />
         <Route path="/Lifecycle" component={Lifecycle} />
         <Route path="/HW" component={HW} />
+        <Route path="/JQ" component={JQ} />
+        <Route path="/ProductFilter" component={ProductFilter} />
       </Router>
     </>
   );
