@@ -1,10 +1,17 @@
+//Homw
+.homeBTN {
+  margin: 0;
+  width: 100px;
+}
+
 // HW
 .active {
   background-color: red;
   color: #fff;
 }
-.navbar-light .navbar-nav .nav-link.active {
+.navSelected {
   background-color: rgb(100, 200, 138);
+  font-weight: bold;
 }
 
 .error {

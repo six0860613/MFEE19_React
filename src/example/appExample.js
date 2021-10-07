@@ -16,7 +16,7 @@ const students = [
   { id: 3, name: 'Cate' },
 ];
 
-function appExample() {
+function AppExample() {
   return (
     <>
       <div className="container">
@@ -56,4 +56,4 @@ function appExample() {
   );
 }
 
-export default appExample;
+export default AppExample;
