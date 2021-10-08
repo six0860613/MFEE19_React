@@ -20,15 +20,12 @@ const handleSubmit = (e) => {
     }
   }
   console.log(age);
-
-  document.getElementById('result').innerText = formData.get('birth');
+  if (age > 18) {
+    document.getElementById('result').innerText = '您已年滿18歲!';
+  } else {
+    document.getElementById('result').innerText = '您未滿18歲!!';
+  }
 };
-// function strToDate(dateStr){
-//     var dateTime = Date.parse(dateStr);//將日期字串轉換為表示日期的秒數
-//     //注意：Date.parse(dateStr)預設情況下只能轉換：月/日/年 格式的字串，但是經測試年/月/日格式的字串也能被解析
-//     var data = new Date(dateTime);//將日期秒數轉換為日期格式
-//     return data;
-//     }
 
 function Hw3() {
   const [date, setDate] = useState('');
