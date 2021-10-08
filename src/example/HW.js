@@ -1,44 +1,41 @@
-import React, { useState } from 'react';
+import React from 'react';
+import Hw1 from '../components/Homework/Hw1';
+import Hw2 from '../components/Homework/Hw2';
+import Hw3 from '../components/Homework/Hw3';
 
 function HW() {
-  const [page, setPage] = useState('首頁');
   return (
     <>
-      <ul>
-        <li>
-          <a
-            href="#/"
-            onClick={() => {
-              setPage('首頁');
-            }}
-            className={page === '首頁' ? 'HWactive' : ''}
-          >
-            首頁
-          </a>
-        </li>
-        <li>
-          <a
-            href="#/"
-            onClick={() => {
-              setPage('關於我們');
-            }}
-            className={page === '關於我們' ? 'HWactive' : ''}
-          >
-            關於我們
-          </a>
-        </li>
-        <li>
-          <a
-            href="#/"
-            onClick={() => {
-              setPage('產品');
-            }}
-            className={page === '產品' ? 'HWactive' : ''}
-          >
-            產品
-          </a>
-        </li>
-      </ul>{' '}
+      <div class="container-fluid">
+        <div className="row">
+          <div className="col-12">
+            <h1>Homework 1</h1>
+          </div>
+          <Hw1 />
+        </div>
+        <hr />
+        <div className="row">
+          <div className="col-12">
+            <h1>Homework 2</h1>
+          </div>
+          <Hw2 />
+        </div>
+        <hr />
+        <div className="row">
+          <div className="col-12">
+            <h1>Homework 3</h1>
+          </div>
+          <div className="col-12">
+            <Hw3 />
+          </div>
+        </div>
+        <hr />
+        <div className="row">
+          <div className="col-12">
+            <h1>Homework 4</h1>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
