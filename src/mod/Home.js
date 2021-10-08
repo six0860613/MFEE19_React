@@ -7,7 +7,7 @@ function Home() {
     <>
       <div className="container">
         <div className="row">
-          <h1>HOME PAGE</h1>
+          <h1>入口頁</h1>
           <IconButton />
           <img src={`${imgUrl}/img/026.jpg`} alt="" />
         </div>

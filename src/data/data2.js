@@ -1,7 +1,7 @@
-const data = [
+const data2 = [
   {
     id: '1',
-    picture: 'http://placehold.it/32x32',
+    image: 'http://placehold.it/32x32',
     stock: 5,
     name: 'iPhone 12 Pro',
     price: 25000,
@@ -9,7 +9,7 @@ const data = [
   },
   {
     id: '2',
-    picture: 'http://placehold.it/32x32',
+    image: 'http://placehold.it/32x32',
     stock: 5,
     name: 'iPhone 12',
     price: 15000,
@@ -17,7 +17,7 @@ const data = [
   },
   {
     id: '3',
-    picture: 'http://placehold.it/32x32',
+    image: 'http://placehold.it/32x32',
     stock: 10,
     name: 'iPhone SE',
     price: 12500,
@@ -25,7 +25,7 @@ const data = [
   },
   {
     id: '4',
-    picture: 'http://placehold.it/32x32',
+    image: 'http://placehold.it/32x32',
     stock: 10,
     name: 'iPhone XS',
     price: 22000,
@@ -33,7 +33,7 @@ const data = [
   },
   {
     id: '5',
-    picture: 'http://placehold.it/32x32',
+    image: 'http://placehold.it/32x32',
     stock: 6,
     name: 'Google Pixel 5',
     price: 17000,
@@ -41,7 +41,7 @@ const data = [
   },
   {
     id: '6',
-    picture: 'http://placehold.it/32x32',
+    image: 'http://placehold.it/32x32',
     stock: 6,
     name: 'Google Pixel 4',
     price: 15500,
@@ -49,4 +49,4 @@ const data = [
   },
 ];
 
-export { data };
+export { data2 };

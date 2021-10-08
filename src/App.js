@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import MyNavbar from './mod/MyNavbar';
 import Home from './mod/Home';
+import MultiLevelBreadCrumb from './components/MultiLevelBreadCrumb';
 
 import CartCount from './example/CartCount';
 import AppExample from './example/AppExample';
@@ -12,12 +13,30 @@ import Lifecycle from './example/Lifecycle';
 import HW from './example/HW';
 import JQ from './example/JQ';
 import ProductFilter from './example/ProductFilter';
+import ADProduct from './example/ADProduct';
+import ADCart from './example/ADCart';
+import ADProductDetail from './example/ADProductDetail';
+import User from './example/User';
 
 function App() {
+  const [cartCount, setCartCount] = useState(0);
+
+  // didMount
+  useEffect(() => {
+    //請localstorage中的購物車數量
+    const myCart = localStorage.getItem('cart')
+      ? JSON.parse(localStorage.getItem('cart'))
+      : [];
+
+    // 設定為陣列的長度(成員數量)
+    setCartCount(myCart.length);
+  }, []);
+
   return (
     <Router>
       <>
-        <MyNavbar />
+        <MyNavbar cartCount={cartCount} setCartCount={setCartCount} />
+        <MultiLevelBreadCrumb />
         <Switch>
           <Route path="/Home">
             <Home />
@@ -40,11 +59,23 @@ function App() {
           <Route path="/HW">
             <HW />
           </Route>
+          <Route path="/User">
+            <User />
+          </Route>
           <Route path="/JQ">
             <JQ />
           </Route>
           <Route path="/ProductFilter">
             <ProductFilter />
+          </Route>
+          <Route path="/product" exact>
+            <ADProduct cartCount={cartCount} setCartCount={setCartCount} />
+          </Route>
+          <Route path="/cart" exact>
+            <ADCart />
+          </Route>
+          <Route path="/product/productDetail/:id?" exact>
+            <ADProductDetail />
           </Route>
         </Switch>
         {/* <Route path="/Home" component={Home} />

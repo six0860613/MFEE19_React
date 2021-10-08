@@ -11,7 +11,7 @@ function HW() {
             onClick={() => {
               setPage('首頁');
             }}
-            className={page === '首頁' ? 'active' : ''}
+            className={page === '首頁' ? 'HWactive' : ''}
           >
             首頁
           </a>
@@ -22,7 +22,7 @@ function HW() {
             onClick={() => {
               setPage('關於我們');
             }}
-            className={page === '關於我們' ? 'active' : ''}
+            className={page === '關於我們' ? 'HWactive' : ''}
           >
             關於我們
           </a>
@@ -33,7 +33,7 @@ function HW() {
             onClick={() => {
               setPage('產品');
             }}
-            className={page === '產品' ? 'active' : ''}
+            className={page === '產品' ? 'HWactive' : ''}
           >
             產品
           </a>
