@@ -6,7 +6,7 @@ import ChildB2 from './ChildB2';
 
 function ParentAB() {
   // 傳給ChildA
-  const [parentData, setParentData] = useState('Parent給ChildA');
+  const [parentData] = useState('Parent給ChildA');
   // ChildB傳來的
   const [Data, setData] = useState('');
   return (

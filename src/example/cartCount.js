@@ -46,7 +46,7 @@ const initStateObj = (product) => {
   return state;
 };
 
-function App() {
+function CartCount() {
   // const [counts, setCounts] = useState(initState(product));
   const [orders, setOrders] = useState(initStateObj(product));
   //Summary
@@ -84,4 +84,4 @@ function App() {
   );
 }
 
-export default App;
+export default CartCount;

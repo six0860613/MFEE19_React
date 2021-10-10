@@ -13,7 +13,7 @@ import ParentAB from '../components/appExample/ParentAB';
 const students = [
   { id: 1, name: 'Allen' },
   { id: 2, name: 'Ben' },
-  { id: 3, name: 'Cate' },
+  { id: 3, name: 'Kevin' },
 ];
 
 function AppExample() {

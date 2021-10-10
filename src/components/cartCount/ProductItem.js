@@ -1,8 +1,7 @@
 import React from 'react';
 
 function ProductItem(props) {
-  const { id, name, category, image, price, counts, setCounts, deleteItem } =
-    props;
+  const { name, category, image, price, counts, setCounts, deleteItem } = props;
   return (
     <>
       <div className="row">
@@ -11,9 +10,7 @@ function ProductItem(props) {
             <img className="img-fluid" src={image} alt="" />
           </div>
           <div className="col">
-            <div className="row text-muted">
-              {category} #{id}
-            </div>
+            <div className="row text-muted">{category}</div>
             <div className="row">{name}</div>
           </div>
           <div className="col">

@@ -1,7 +1,7 @@
 //Home
 .homeBTN {
   margin: 0;
-  width: 100px;
+  max-width: 100px;
 }
 
 // HW
@@ -22,6 +22,18 @@
   font-size: 10px;
 }
 
+.todo {
+  height: 150px;
+  font-size: 20px;
+  color: green;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.listDone {
+  color: red;
+  text-decoration: line-through;
+}
 //  Product Filter
 .btn {
   margin-bottom: 5px;

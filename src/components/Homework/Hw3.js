@@ -23,7 +23,9 @@ const handleSubmit = (e) => {
   if (age > 18) {
     document.getElementById('result').innerText = '您已年滿18歲!';
   } else {
-    document.getElementById('result').innerText = '您未滿18歲!!';
+    document.getElementById(
+      'result'
+    ).innerText = `您未滿18歲!!(您的年齡：${age})`;
   }
 };
 

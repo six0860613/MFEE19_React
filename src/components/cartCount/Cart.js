@@ -20,40 +20,37 @@ function Cart(props) {
         </div>
         {orders.map((value, index) => {
           return (
-            <>
-              <ProductItem
-                key={value.id}
-                id={value.id}
-                name={value.name}
-                category={value.category}
-                image={value.image}
-                price={value.price}
-                counts={value.count}
-                setCounts={(newCount) => {
-                  //1. 先展開陣列並複製到變數中
-                  const newOrders = [...orders];
+            <ProductItem
+              key={value.id}
+              name={value.name}
+              category={value.category}
+              image={value.image}
+              price={value.price}
+              counts={value.count}
+              setCounts={(newCount) => {
+                //1. 先展開陣列並複製到變數中
+                const newOrders = [...orders];
 
-                  //2. 更新陣列中本商品索引值，如果小於1以1來更新
-                  newOrders[index].count = newCount < 1 ? 1 : newCount;
+                //2. 更新陣列中本商品索引值，如果小於1以1來更新
+                newOrders[index].count = newCount < 1 ? 1 : newCount;
 
-                  //3. 設定回去
-                  setOrders(newOrders);
-                }}
-                deleteItem={(newCount) => {
-                  const newItem = [...orders];
-                  newItem[index].count = newCount;
-                  //刪除用的
-                  if (newCount < 1) {
-                    newItem.splice(index, 1);
-                    // filter方法
-                    // const newI = newItem.filter((v, i) => i !== index);
-                    // console.log(newI);
-                    // setOrders(newI);
-                  }
-                  setOrders(newItem);
-                }}
-              />
-            </>
+                //3. 設定回去
+                setOrders(newOrders);
+              }}
+              deleteItem={(newCount) => {
+                const newItem = [...orders];
+                newItem[index].count = newCount;
+                //刪除用的
+                if (newCount < 1) {
+                  newItem.splice(index, 1);
+                  // filter方法
+                  // const newI = newItem.filter((v, i) => i !== index);
+                  // console.log(newI);
+                  // setOrders(newI);
+                }
+                setOrders(newItem);
+              }}
+            />
           );
         })}
         <div className="back-to-shop">
