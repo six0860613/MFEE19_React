@@ -17,6 +17,8 @@ import ADProduct from './example/ADProduct';
 import ADCart from './example/ADCart';
 import ADProductDetail from './example/ADProductDetail';
 import User from './example/User';
+import Fetch from './example/Fetch';
+import Axios from './example/Axios';
 
 function App() {
   const [cartCount, setCartCount] = useState(0);
@@ -76,6 +78,12 @@ function App() {
           </Route>
           <Route path="/product/productDetail/:id?" exact>
             <ADProductDetail />
+          </Route>
+          <Route path="/Fetch">
+            <Fetch />
+          </Route>
+          <Route path="/Axios">
+            <Axios />
           </Route>
         </Switch>
         {/* <Route path="/Home" component={Home} />

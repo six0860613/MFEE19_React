@@ -104,6 +104,22 @@ function MyNavbar(props) {
                 Cart ({cartCount})
               </NavDropdown.Item>
             </NavDropdown>
+            <NavDropdown title="Restful API" id="basic-nav-dropdown">
+              <NavDropdown.Item
+                as={NavLink}
+                to="/Fetch"
+                activeClassName="navSelected"
+              >
+                Fetch
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                as={NavLink}
+                to="/Axios"
+                activeClassName="navSelected"
+              >
+                Axios
+              </NavDropdown.Item>
+            </NavDropdown>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

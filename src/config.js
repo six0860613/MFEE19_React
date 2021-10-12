@@ -21,3 +21,7 @@ export const pathnameTextList = [
   '/產品總覽/產品詳細',
   '/購物車',
 ];
+
+// host
+export const API_URL = 'http://localhost:3001';
+export const AddresBook = API_URL + '/address-book/api/list';
