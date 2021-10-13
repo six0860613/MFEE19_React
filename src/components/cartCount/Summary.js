@@ -34,7 +34,7 @@ function Summary(props) {
           <div className="col">總價</div>
           <div className="col text-right">&euro; {total + selectedOption}</div>
         </div>
-        <button className="btn">CHECKOUT</button>
+        <button className="cartBtn">CHECKOUT</button>
       </div>
     </>
   );

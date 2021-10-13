@@ -22,20 +22,22 @@ function Fetch() {
     <>
       <h1>Fetch</h1>
       <table>
-        {data.rows
-          ? data.rows.map((v, i) => {
-              return (
-                <tr>
-                  <td>{v.sid}</td>
-                  <td>{v.name}</td>
-                  <td>{v.email}</td>
-                  <td>{v.mobile}</td>
-                  <td>{dayjs(v.birthday).format('YYYY-MM-DD')}</td>
-                  <td>{v.address}</td>
-                </tr>
-              );
-            })
-          : ''}
+        <tbody>
+          {data.rows
+            ? data.rows.map((v, i) => {
+                return (
+                  <tr key={i}>
+                    <td>{v.sid}</td>
+                    <td>{v.name}</td>
+                    <td>{v.email}</td>
+                    <td>{v.mobile}</td>
+                    <td>{dayjs(v.birthday).format('YYYY-MM-DD')}</td>
+                    <td>{v.address}</td>
+                  </tr>
+                );
+              })
+            : null}
+        </tbody>
       </table>
     </>
   );

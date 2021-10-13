@@ -5,14 +5,14 @@ import axios from 'axios';
 
 function Axios() {
   const [data, setData] = useState({});
-  const [totalRows, setTotalRows] = useState(0);
+  // const [totalRows, setTotalRows] = useState(0);
 
   useEffect(() => {
     (async () => {
       let r = await axios.get(AddresBook);
       console.log(r);
       if (r.status === 200) {
-        setTotalRows(r.data.totalRows);
+        // setTotalRows(r.data.totalRows);
         setData(r.data);
       }
     })();

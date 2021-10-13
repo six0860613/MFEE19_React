@@ -119,6 +119,13 @@ function MyNavbar(props) {
               >
                 Axios
               </NavDropdown.Item>
+              <NavDropdown.Item
+                as={NavLink}
+                to="/Upload"
+                activeClassName="navSelected"
+              >
+                Upload
+              </NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

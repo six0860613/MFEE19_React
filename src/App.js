@@ -19,6 +19,7 @@ import ADProductDetail from './example/ADProductDetail';
 import User from './example/User';
 import Fetch from './example/Fetch';
 import Axios from './example/Axios';
+import Upload from './example/Upload';
 
 function App() {
   const [cartCount, setCartCount] = useState(0);
@@ -84,6 +85,9 @@ function App() {
           </Route>
           <Route path="/Axios">
             <Axios />
+          </Route>
+          <Route path="/Upload">
+            <Upload />
           </Route>
         </Switch>
         {/* <Route path="/Home" component={Home} />
