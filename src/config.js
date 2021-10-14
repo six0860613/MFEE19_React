@@ -27,3 +27,4 @@ export const API_URL = 'http://localhost:3001';
 export const AddresBook = API_URL + '/address-book/api/list';
 export const UploadAvatar = API_URL + '/try-upload2';
 export const ImgPath = API_URL + '/img/';
+export const TestAvatar = API_URL + '/test_avatar';
