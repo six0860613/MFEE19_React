@@ -1,4 +1,3 @@
-import { doc } from 'prettier';
 import React, { useState } from 'react';
 import { UploadAvatar, ImgPath, TestAvatar } from '../config';
 // import axios from 'axios';
